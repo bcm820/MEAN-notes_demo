@@ -1,0 +1,12 @@
+
+<h1>Anonymous Notes</h1>
+
+<app-create></app-create>
+
+<div class=row *ngFor="let note of list.reverse()">
+    <div class=col-sm-12>
+        {{note.date|date:'medium'}}<br>
+        {{note.text}}
+        <hr>
+    </div>
+</div>

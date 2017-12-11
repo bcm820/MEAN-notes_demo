@@ -1,0 +1,7 @@
+
+<div>
+  <form (submit)="create()">
+  Note: <input type=text name=text [(ngModel)]='note.text' #text='ngModel' required minlength=3>
+  <input type=submit value=Add>
+  </form>
+</div>
